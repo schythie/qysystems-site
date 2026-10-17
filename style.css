@@ -2,6 +2,7 @@
    Tasarım dili: teknik resim. Kâğıt zemin, ölçü ızgarası, antet tablosu,
    seri numarası gibi eşit aralıklı etiketler. Dış kaynak (font, analiz,
    çerez) yok. */
+@import url("fonts.css");
 :root {
   color-scheme: light;
   --paper: #f1eee7;
@@ -16,9 +17,9 @@
   --mark: #ffd84d;
   --ok: #1f8a4c;
   --max: 1180px;
-  --display: "Bahnschrift", "DIN Alternate", "DIN Next", "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif;
+  --display: "QY Display", "Bahnschrift", "DIN Alternate", "DIN Next", "Segoe UI Variable Display", "Segoe UI", system-ui, sans-serif;
   --body: "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
-  --mono: "Cascadia Mono", "SF Mono", Consolas, "Roboto Mono", ui-monospace, monospace;
+  --mono: "QY Mono", "Cascadia Mono", "SF Mono", Consolas, "Roboto Mono", ui-monospace, monospace;
 }
 
 * { box-sizing: border-box; }
@@ -92,7 +93,7 @@ a { color: inherit; }
   color: var(--mark);
   font-family: var(--mono);
   font-size: 13px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0;
 }
 
@@ -245,7 +246,7 @@ h1 {
 .tv-val {
   font-family: var(--mono);
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 0.02em;
 }
 
@@ -475,7 +476,7 @@ h2 {
   color: var(--mark);
   font-family: var(--mono);
   font-size: 18px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 22px;
 }
 
