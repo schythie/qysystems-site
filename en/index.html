@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>QY Systems | Production tracking system</title>
   <meta name="description" content="QY Systems brings work orders, station records, inventory and traceability together in one production tracking system for small and mid-sized manufacturers.">
+  <meta name="theme-color" content="#f1eee7">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="alternate" hreflang="tr" href="https://qysystems.com.tr/">
   <link rel="alternate" hreflang="en" href="https://qysystems.com.tr/en/">
   <meta property="og:title" content="QY Systems | Production tracking system">
-  <meta property="og:description" content="Work orders, station records, inventory and traceability in one place.">
+  <meta property="og:description" content="Every part's story, on record. Work orders, station records, inventory and traceability in one place.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://qysystems.com.tr/en/">
   <meta property="og:locale" content="en_US">
@@ -20,15 +21,15 @@
 <header class="top">
   <div class="wrap">
     <a class="brand" href="./" aria-label="QY Systems home">
-      <svg viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#0f3d5e"/><path d="M8 9h9a6 6 0 0 1 6 6v0a6 6 0 0 1-6 6H8z" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round"/><path d="M18 19l6 5" stroke="#e8792b" stroke-width="2.8" stroke-linecap="round"/></svg>
+      <span class="glyph" aria-hidden="true">QY</span>
       QY Systems
     </a>
     <nav class="nav" aria-label="Main menu">
-      <a href="#features">Features</a>
-      <a href="#how">How it works</a>
+      <a href="#modules">Modules</a>
+      <a href="#line">How it works</a>
       <a href="#who">Who it's for</a>
       <a href="#contact">Contact</a>
-      <a class="lang" href="../" hreflang="tr" lang="tr">TR</a>
+      <a class="lang" href="../" hreflang="tr" aria-label="Türkçe sürüm"><span>TR</span><b>EN</b></a>
     </nav>
   </div>
 </header>
@@ -37,69 +38,120 @@
 
 <div class="hero">
   <div class="wrap">
-    <span class="eyebrow">Production tracking system</span>
-    <h1>Move your shop floor records from paper to screen.</h1>
-    <p class="lead">QY Systems brings work orders, every step at every station, inventory and traceability together for small and mid-sized manufacturers. See in seconds which part went through which step, with which material, and by whose hands.</p>
-    <div class="buttons">
-      <a class="btn primary" href="#contact">Get in touch</a>
-      <a class="btn ghost" href="#features">See features</a>
+    <div>
+      <div class="docline mono"><span>Production tracking system</span><span>For SMEs</span></div>
+      <h1>Every part's story, <span class="mark">on record.</span></h1>
+      <p class="lead">QY Systems brings work orders, every step at every station, inventory and traceability into one place. Which part went through which step, with which material, by whose hands: you see it in seconds.</p>
+      <div class="actions">
+        <a class="btn" href="#contact">Get in touch <span aria-hidden="true">→</span></a>
+        <a class="link" href="#modules">See what it does</a>
+      </div>
     </div>
+
+    <figure class="traveler" aria-label="Sample work order card">
+      <div class="tv-head">
+        <div><span class="tv-label mono">Serial no</span><span class="tv-val">TB-0042</span></div>
+        <div><span class="tv-label mono">Work order</span><span class="tv-val">100318</span></div>
+        <div><span class="tv-label mono">Product</span><span class="tv-val">Tube Ø120</span></div>
+        <div><span class="tv-label mono">Drawing rev.</span><span class="tv-val">C</span></div>
+      </div>
+      <ol class="tv-steps">
+        <li><span class="n">01</span><span class="t">Winding<small>08:42 · A. Yılmaz</small></span><span class="st done">Done</span></li>
+        <li><span class="n">02</span><span class="t">Curing<small>11:15 · 120 °C · within limits</small></span><span class="st done">Done</span></li>
+        <li><span class="n">03</span><span class="t">Cutting and grinding<small>13:05 · M. Demir</small></span><span class="st now">In progress</span></li>
+        <li><span class="n">04</span><span class="t">Final inspection<small>Dimensional and visual check</small></span><span class="st wait">Waiting</span></li>
+      </ol>
+      <div class="tv-lots">
+        <span class="tv-label mono">Materials used</span>
+        <span class="lot">Glass fibre · LOT 2309-14</span>
+        <span class="lot">Resin · LOT 2310-02</span>
+      </div>
+    </figure>
   </div>
 </div>
 
-<section class="alt" id="features">
+<section>
   <div class="wrap">
-    <h2>What it does</h2>
-    <p class="section-lead">It replaces shop floor forms, Excel lists and the warehouse logbook with one system. Every record is entered once, and everyone sees the same information.</p>
-    <div class="grid">
-      <article class="card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M9 8h6M9 12h6M9 16h3"/></svg></div>
-        <h3>Work orders and serial numbers</h3>
-        <p>Pick the product and quantity; the process and drawing revision come from the product. Each part gets its own serial number, and a faulty part is scrapped with one click.</p>
-      </article>
-      <article class="card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M8 10l2 2 4-4"/></svg></div>
-        <h3>Station screen</h3>
-        <p>Operators record each step from a tablet or computer. Required measurements are prompted on screen, and out-of-limit values show up immediately.</p>
-      </article>
-      <article class="card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="12" r="2.5"/><circle cx="6" cy="18" r="2.5"/><path d="M8.5 6H12a3 3 0 0 1 3 3v.5M8.5 18H12a3 3 0 0 0 3-3v-.5"/></svg></div>
-        <h3>Process and risk definitions</h3>
-        <p>Define production steps, control values and failure risks (PFMEA) once. Changes are kept as versions; older work orders stay on their original version.</p>
-      </article>
-      <article class="card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8l9-5 9 5v8l-9 5-9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></div>
-        <h3>Inventory and lot tracking</h3>
-        <p>Goods receipt, quality approval, stock counts and shipping. Materials are reserved for work orders from the bill of materials and consumed automatically as production moves on.</p>
-      </article>
-      <article class="card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></svg></div>
-        <h3>Traceability and certificates of conformity</h3>
-        <p>Trace both ways: from a serial number to the material lots used, and from a lot to every part it went into. The system prepares the certificate of conformity at shipping.</p>
-      </article>
-      <article class="card">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></div>
-        <h3>Reports</h3>
-        <p>Filter work order, quality and material reports and export them to Excel. When a customer audit comes, you don't waste time hunting for records.</p>
-      </article>
+    <div class="sec-head">
+      <div class="sec-no">01</div>
+      <div>
+        <h2>One record instead of paper forms, Excel and the stock book.</h2>
+        <p>On most shop floors, information is scattered across several places. QY Systems brings it into one system: every record is entered once, and everyone sees the same information.</p>
+      </div>
+    </div>
+    <div class="versus">
+      <div class="before">
+        <span class="mono">Today</span>
+        <h3>On paper and in Excel</h3>
+        <ul>
+          <li>Forms get filled in, then get lost somewhere.</li>
+          <li>Nobody can tell later which material lot went into which part.</li>
+          <li>The stock on the shelf doesn't match the stock book.</li>
+          <li>When a customer asks for documents, files are searched for days.</li>
+        </ul>
+      </div>
+      <div class="after">
+        <span class="mono">With QY Systems</span>
+        <h3>In one system</h3>
+        <ul>
+          <li>Operators record each step on screen, and everyone sees it right away.</li>
+          <li>Trace both ways between serial numbers and material lots.</li>
+          <li>Material is consumed from stock automatically as production moves on.</li>
+          <li>Certificates of conformity and reports are a few clicks away.</li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="how">
+<section id="modules" style="padding-top:0">
   <div class="wrap">
-    <h2>How it works</h2>
-    <p class="section-lead">No big migration project. Start with a single line and run it side by side with your paper records.</p>
-    <ol class="steps">
+    <div class="sec-head">
+      <div class="sec-no">02</div>
+      <div>
+        <h2>Modules</h2>
+        <p>Like the parts list on a drawing: each module does one job well, and all of them connect to the same record.</p>
+      </div>
+    </div>
+    <table class="parts">
+      <thead><tr><th>Item</th><th>Module</th><th>What it does</th></tr></thead>
+      <tbody>
+        <tr><td>01</td><td>Work orders and serial numbers</td><td>Pick the product and quantity; the process and drawing revision come from the product. Each part gets its own serial number, and a faulty part is scrapped with one click.</td></tr>
+        <tr><td>02</td><td>Station screen</td><td>Operators record each step from a tablet or computer. Required measurements are prompted on screen, and out-of-limit values show up immediately.</td></tr>
+        <tr><td>03</td><td>Process and risk definitions</td><td>Define production steps, control values and failure risks (PFMEA) once. Changes are kept as versions; older work orders stay on their original version.</td></tr>
+        <tr><td>04</td><td>Inventory and lot tracking</td><td>Goods receipt, quality approval, stock counts and shipping. Materials are reserved for work orders from the bill of materials and consumed as production moves on.</td></tr>
+        <tr><td>05</td><td>Traceability and certificates of conformity</td><td>Go from a serial number to the lots it used, and from a lot to every part it went into. The system prepares the certificate of conformity at shipping.</td></tr>
+        <tr><td>06</td><td>Reports</td><td>Filter work order, quality and material reports and export them to Excel. When an audit comes, you don't waste time hunting for records.</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section class="line-sec" id="line">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">03</div>
+      <div>
+        <h2>No big migration project. We start with one line.</h2>
+        <p>For the first weeks it runs side by side with your paper records. As the team gets used to it, the paper simply goes away.</p>
+      </div>
+    </div>
+    <ol class="line">
       <li>
+        <span class="station">01</span>
+        <span class="mono">Setup</span>
         <h3>We define your process together</h3>
         <p>We sit down with you and enter your products, production steps and control values.</p>
       </li>
       <li>
-        <h3>Recording starts on the floor</h3>
-        <p>Operators record steps on the station screen. The warehouse handles material in and out in the same system.</p>
+        <span class="station">02</span>
+        <span class="mono">Shop floor</span>
+        <h3>Recording starts at the station</h3>
+        <p>Operators record steps on the station screen; the warehouse handles material in and out in the same system.</p>
       </li>
       <li>
+        <span class="station">03</span>
+        <span class="mono">Management</span>
         <h3>You track and report</h3>
         <p>Where each work order is, how much material is left, which part had a problem: all on one screen.</p>
       </li>
@@ -107,33 +159,39 @@
   </div>
 </section>
 
-<section class="alt" id="who">
-  <div class="wrap split">
-    <div>
-      <h2>Who it's for</h2>
-      <p class="section-lead">Big ERP systems are heavy and expensive, and Excel is not enough. QY Systems is for the manufacturers in between.</p>
-      <ul class="checks">
-        <li>Makers of serial-numbered or lot-tracked parts</li>
-        <li>Suppliers whose customers ask for quality records and certificates of conformity</li>
-        <li>Composites, machinery, industrial equipment and similar job-shop production</li>
-        <li>Teams that keep production records on paper forms or in Excel today</li>
-      </ul>
+<section id="who">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-no">04</div>
+      <div>
+        <h2>Big ERPs are heavy, Excel isn't enough. Built for the manufacturers in between.</h2>
+      </div>
     </div>
-    <div class="card">
-      <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div>
-      <h3>Your data stays in your factory</h3>
-      <p>The system can run on a computer in your own factory. Your production data is not sent anywhere else; tablets and computers on the floor connect through a web browser. We set up backups and updates.</p>
+    <div class="fit">
+      <div><span class="mono">A</span><p>Makers of serial-numbered or lot-tracked parts</p></div>
+      <div><span class="mono">B</span><p>Suppliers whose customers ask for quality records and certificates</p></div>
+      <div><span class="mono">C</span><p>Composites, machinery, industrial equipment and similar job shops</p></div>
+      <div><span class="mono">D</span><p>Teams that keep production records on paper or in Excel today</p></div>
     </div>
   </div>
 </section>
 
-<section id="contact">
+<section class="band">
   <div class="wrap">
-    <div class="contact">
-      <h2>Get in touch</h2>
-      <p>Tell us about your production and how you keep records today. We'll see together whether it fits, and if it does, try it on one line.</p>
-      <a class="mail" href="mailto:info@qysystems.com.tr">info@qysystems.com.tr</a>
+    <div>
+      <span class="mono">Data security</span>
+      <h2>Your data stays <em>in your factory.</em></h2>
     </div>
+    <p>The system can run on a computer in your own factory. Your production data is not sent anywhere else; tablets and computers on the floor connect through a web browser. We set up backups and updates.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <span class="mono">05 · Contact</span>
+    <h2>Tell us about your production.</h2>
+    <p>Let's talk about how you keep records today. We'll see together whether it fits, and if it does, try it on one line.</p>
+    <a class="mail" href="mailto:info@qysystems.com.tr">info@qysystems.com.tr</a>
   </div>
 </section>
 
@@ -141,8 +199,13 @@
 
 <footer>
   <div class="wrap">
-    <span>© 2026 QY Systems</span>
-    <a href="../" hreflang="tr" lang="tr">Türkçe</a>
+    <div class="titleblock">
+      <div><span class="tv-label">Company</span><strong>QY Systems</strong></div>
+      <div><span class="tv-label">Document</span><strong>Overview</strong></div>
+      <div><span class="tv-label">Rev.</span><strong>A</strong></div>
+      <div><span class="tv-label">Year</span><strong>2026</strong></div>
+      <div><span class="tv-label">Language</span><strong><a href="../" hreflang="tr" lang="tr">TR</a> · EN</strong></div>
+    </div>
   </div>
 </footer>
 
