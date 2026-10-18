@@ -1,213 +1,126 @@
 <!doctype html>
 <html lang="tr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QY Systems | Üretim takip sistemi</title>
-  <meta name="description" content="QY Systems, üretim yapan KOBİ'ler için iş emri, istasyon kaydı, stok ve izlenebilirliği tek yerde toplayan üretim takip sistemidir.">
-  <meta name="theme-color" content="#f1eee7">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="alternate" hreflang="tr" href="https://qysystems.com.tr/">
-  <link rel="alternate" hreflang="en" href="https://qysystems.com.tr/en/">
-  <meta property="og:title" content="QY Systems | Üretim takip sistemi">
-  <meta property="og:description" content="Her parçanın hikâyesi, kayıtlı. İş emri, istasyon kaydı, stok ve izlenebilirlik tek yerde.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://qysystems.com.tr/">
-  <meta property="og:locale" content="tr_TR">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QY Systems · Üretim ve stok yönetimi</title>
+<meta name="description" content="QY Systems: fabrikalar için üretim takibi (MES) ve stok yönetimi. İş emri, lot, seri no ve raf tek ekranda.">
+<link rel="icon" href="assets/qy-favicon.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="en" href="https://qysystems.com.tr/en/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter+Tight:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="top">
   <div class="wrap">
-    <a class="brand" href="./" aria-label="QY Systems ana sayfa">
-      <span class="glyph" aria-hidden="true">QY</span>
-      QY Systems
-    </a>
-    <nav class="nav" aria-label="Ana menü">
-      <a href="#moduller">Modüller</a>
-      <a href="#hat">Nasıl çalışır</a>
-      <a href="#kimler">Kimler için</a>
-      <a href="#iletisim">İletişim</a>
-      <a class="lang" href="en/" hreflang="en" aria-label="English version"><b>TR</b><span>EN</span></a>
+    <a class="logo" href="./" aria-label="QY Systems ana sayfa"><img src="assets/qy-lockup-control.svg" alt="QY Systems"></a>
+    <nav>
+      <a class="sec" href="#urunler">Ürünler</a>
+      <a class="sec" href="#nasil">Nasıl çalışıyoruz</a>
+      <a class="sec" href="#iletisim">İletişim</a>
+      <a class="lang" href="en/" hreflang="en" lang="en">EN</a>
     </nav>
   </div>
 </header>
 
 <main>
-
-<div class="hero">
+<section class="hero">
   <div class="wrap">
     <div>
-      <div class="docline mono"><span>Üretim takip sistemi</span><span>KOBİ'ler için</span></div>
-      <h1>Her parçanın hikâyesi, <span class="mark">kayıtlı.</span></h1>
-      <p class="lead">QY Systems iş emrini, istasyondaki her adımı, stoğu ve izlenebilirliği tek yerde toplar. Hangi parça hangi adımda, hangi malzemeyle, kimin elinden geçti: birkaç saniyede görürsünüz.</p>
+      <p class="label">Üretim + Stok yönetimi</p>
+      <h1>Üretim, gerçek zamanlı.</h1>
+      <p>Her iş emri, her lot, her raf tek ekranda. QY Systems fabrikanın üretimini ve deposunu aynı sistemde takip eder; sahada operatör, ofiste planlama aynı sayıya bakar.</p>
       <div class="actions">
-        <a class="btn" href="#iletisim">Tanışalım <span aria-hidden="true">→</span></a>
-        <a class="link" href="#moduller">Neler yaptığına bakın</a>
+        <a class="btn primary" href="#iletisim">Demo iste</a>
+        <a class="btn" href="#urunler">Ürünleri incele</a>
       </div>
     </div>
-
-    <figure class="traveler" aria-label="Örnek iş emri kartı">
-      <div class="tv-head">
-        <div><span class="tv-label mono">Seri no</span><span class="tv-val">TB-0042</span></div>
-        <div><span class="tv-label mono">İş emri</span><span class="tv-val">100318</span></div>
-        <div><span class="tv-label mono">Ürün</span><span class="tv-val">Tüp Ø120</span></div>
-        <div><span class="tv-label mono">Resim rev.</span><span class="tv-val">C</span></div>
-      </div>
-      <ol class="tv-steps">
-        <li><span class="n">01</span><span class="t">Sarım<small>08:42 · A. Yılmaz</small></span><span class="st done">Tamam</span></li>
-        <li><span class="n">02</span><span class="t">Kürleme<small>11:15 · 120 °C · sınır içinde</small></span><span class="st done">Tamam</span></li>
-        <li><span class="n">03</span><span class="t">Kesme ve taşlama<small>13:05 · M. Demir</small></span><span class="st now">Sürüyor</span></li>
-        <li><span class="n">04</span><span class="t">Son kontrol<small>Ölçü ve görsel kontrol</small></span><span class="st wait">Bekliyor</span></li>
-      </ol>
-      <div class="tv-lots">
-        <span class="tv-label mono">Kullanılan malzeme</span>
-        <span class="lot">Cam elyaf · LOT 2309-14</span>
-        <span class="lot">Reçine · LOT 2310-02</span>
-      </div>
-    </figure>
+    <div class="rack" aria-hidden="true">
+      <span class="f1"></span><span></span><span class="f3"></span><span class="f2"></span><span></span><span class="f1"></span>
+      <span></span><span class="f2"></span><span class="f1"></span><span></span><span class="f3"></span><span></span>
+      <span class="f3"></span><span></span><span class="f1"></span><span class="sig"></span><span class="f2"></span><span></span>
+      <span class="f1"></span><span class="f3"></span><span></span><span class="f2"></span><span></span><span class="f1"></span>
+    </div>
   </div>
-</div>
+</section>
 
-<section>
+<section class="block" id="urunler">
   <div class="wrap">
-    <div class="sec-head">
-      <div class="sec-no">01</div>
-      <div>
-        <h2>Kâğıt form, Excel ve depo defteri yerine tek kayıt.</h2>
-        <p>Atölyede bilgi bugün birkaç yere dağılmış durumda. QY Systems bunları tek bir sistemde toplar; her kayıt bir kez girilir, herkes aynı bilgiyi görür.</p>
-      </div>
-    </div>
-    <div class="versus">
-      <div class="before">
-        <span class="mono">Bugün</span>
-        <h3>Kâğıtta ve Excel'de</h3>
+    <p class="label">Ürünler</p>
+    <h2>İki modül, tek kayıt.</h2>
+    <p class="lead">Üretim ve Stok ayrı çalışabilir, birlikte çalıştığında üretimde harcanan malzeme depodan kendiliğinden düşer.</p>
+
+    <div class="grid2">
+      <article class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="M3 21V10l5 3V10l5 3V10l5 3V4h3v17Z"/></svg>
+        <h3>Üretim (MES)</h3>
+        <p>İş emrinden sevkiyata kadar her parçanın nerede olduğunu gösterir.</p>
         <ul>
-          <li>Form dolduruluyor, sonra bir yerde kayboluyor.</li>
-          <li>Hangi parçaya hangi lot malzeme gittiği sonradan bulunamıyor.</li>
-          <li>Depodaki miktar ile defterdeki tutmuyor.</li>
-          <li>Müşteri belge isteyince günlerce dosya aranıyor.</li>
+          <li>İş emri açma, operasyon sırası ve istasyon takibi</li>
+          <li>Her parçaya seri no; hurda ve yeniden üretim kaydı</li>
+          <li>Müşteriye göre iş emri ve teslim tarihi</li>
+          <li>Sahada büyük ekran, ofiste ayrıntılı tablo</li>
         </ul>
-      </div>
-      <div class="after">
-        <span class="mono">QY Systems ile</span>
-        <h3>Tek sistemde</h3>
+      </article>
+      <article class="card">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter" aria-hidden="true"><path d="M3 3h18v18H3ZM3 9h18M3 15h18M12 3v18"/></svg>
+        <h3>Stok</h3>
+        <p>Malzemenin hangi rafta, hangi lotta, ne kadar olduğunu söyler.</p>
         <ul>
-          <li>Operatör adımı ekrandan kaydeder, kayıt anında herkese görünür.</li>
-          <li>Seri numarasından malzeme lotuna iki yönde inilir.</li>
-          <li>Malzeme üretim ilerledikçe stoktan kendiliğinden düşer.</li>
-          <li>Uygunluk belgesi ve raporlar birkaç tıkla hazır.</li>
+          <li>Malzeme, lot ve raf bazında bakiye</li>
+          <li>Giriş, çıkış ve transferin değiştirilemez kaydı</li>
+          <li>Sayım: sayım sırasında oluşan hareketi yakalar</li>
+          <li>Satın alma ve müşteri için malzeme ayırma</li>
         </ul>
-      </div>
+      </article>
     </div>
+
+    <div class="kpis" aria-label="Örnek kontrol ekranı">
+      <div class="kpi"><p class="label">Açık iş emri</p><p class="num">38</p><span class="chip ok">Çalışıyor</span></div>
+      <div class="kpi"><p class="label">Geciken</p><p class="num">2</p><span class="chip al">Gecikti</span></div>
+      <div class="kpi"><p class="label">Eşik altı malzeme</p><p class="num">5</p><span class="chip sig">Kritik</span></div>
+      <div class="kpi"><p class="label">Yoldaki sipariş</p><p class="num">11</p><span class="chip in">Yolda</span></div>
+    </div>
+    <p class="note">Örnek ekran · sayılar temsilidir</p>
   </div>
 </section>
 
-<section id="moduller" style="padding-top:0">
+<section class="block" id="nasil">
   <div class="wrap">
-    <div class="sec-head">
-      <div class="sec-no">02</div>
-      <div>
-        <h2>Modüller</h2>
-        <p>Teknik resimdeki parça listesi gibi: her modül tek bir işi iyi yapar, hepsi aynı kayda bağlanır.</p>
-      </div>
+    <p class="label">Nasıl çalışıyoruz</p>
+    <h2>Fabrikanızda kurulur, verisi sizde kalır.</h2>
+    <p class="lead">Sistem fabrikanızdaki bir bilgisayarda çalışır. Veri dışarı çıkmaz, internet kesilince üretim durmaz.</p>
+    <div class="steps">
+      <div class="step"><p class="n">01</p><h3>Keşif</h3><p>Hattı ve depoyu yerinde görürüz; iş emri, malzeme ve rafları listeleriz.</p></div>
+      <div class="step"><p class="n">02</p><h3>Kurulum</h3><p>Sistemi fabrikadaki bilgisayara kurar, mevcut malzeme listenizi aktarırız.</p></div>
+      <div class="step"><p class="n">03</p><h3>Eğitim</h3><p>Operatör, depo ve planlama ekibiyle kendi işleri üzerinde çalışırız.</p></div>
+      <div class="step"><p class="n">04</p><h3>Destek</h3><p>İlk aylarda sahadayız; sonra uzaktan ve yerinde destek veririz.</p></div>
     </div>
-    <table class="parts">
-      <thead><tr><th>Poz.</th><th>Modül</th><th>Ne işe yarar</th></tr></thead>
-      <tbody>
-        <tr><td>01</td><td>İş emri ve seri numarası</td><td>Ürünü ve adedi seçin; proses ve teknik resim revizyonu üründen gelir. Her parça kendi seri numarasıyla doğar, hatalı parça tek tuşla hurdaya ayrılır.</td></tr>
-        <tr><td>02</td><td>İstasyon ekranı</td><td>Operatör adımı tabletten ya da bilgisayardan kaydeder. Ölçülmesi gereken değerler ekranda sorulur, sınır dışı değer anında görünür.</td></tr>
-        <tr><td>03</td><td>Proses ve risk tanımları</td><td>Üretim adımlarını, kontrol değerlerini ve hata risklerini (PFMEA) bir kez tanımlayın. Değişiklikler sürüm olarak saklanır; eski iş emirleri eski sürümle kalır.</td></tr>
-        <tr><td>04</td><td>Stok ve lot takibi</td><td>Mal kabul, kalite onayı, sayım ve sevkiyat. Reçeteye göre malzeme iş emrine ayrılır, üretim ilerledikçe stoktan düşer.</td></tr>
-        <tr><td>05</td><td>İzlenebilirlik ve uygunluk belgesi</td><td>Bir seri numarasından kullanılan lotlara, bir lottan gittiği parçalara inin. Sevkiyatta uygunluk belgesini sistem hazırlar.</td></tr>
-        <tr><td>06</td><td>Raporlar</td><td>İş emri, kalite ve malzeme raporlarını filtreleyip Excel olarak alın. Denetim geldiğinde kayıt aramakla vakit kaybetmezsiniz.</td></tr>
-      </tbody>
-    </table>
   </div>
 </section>
 
-<section class="line-sec" id="hat">
+<section class="block contact" id="iletisim">
   <div class="wrap">
-    <div class="sec-head">
-      <div class="sec-no">03</div>
-      <div>
-        <h2>Büyük bir geçiş projesi yok. Bir hatla başlarız.</h2>
-        <p>İlk haftalarda kâğıt kayıtla yan yana çalışır. Ekip alıştıkça kâğıt kendiliğinden bırakılır.</p>
-      </div>
-    </div>
-    <ol class="line">
-      <li>
-        <span class="station">01</span>
-        <span class="mono">Kurulum</span>
-        <h3>Prosesinizi birlikte tanımlarız</h3>
-        <p>Ürünlerinizi, üretim adımlarınızı ve kontrol değerlerinizi sizinle oturup sisteme gireriz.</p>
-      </li>
-      <li>
-        <span class="station">02</span>
-        <span class="mono">Saha</span>
-        <h3>Kayıt istasyonda başlar</h3>
-        <p>Operatörler adımları istasyon ekranından kaydeder; depo, malzeme giriş ve çıkışını aynı sistemde yapar.</p>
-      </li>
-      <li>
-        <span class="station">03</span>
-        <span class="mono">Yönetim</span>
-        <h3>Siz izler ve raporlarsınız</h3>
-        <p>Hangi iş emri nerede, ne kadar malzeme kaldı, hangi parçada sorun çıktı: hepsi tek ekranda.</p>
-      </li>
-    </ol>
-  </div>
-</section>
-
-<section id="kimler">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="sec-no">04</div>
-      <div>
-        <h2>Büyük ERP'ler ağır, Excel yetmiyor. Arada kalan üreticiler için.</h2>
-      </div>
-    </div>
-    <div class="fit">
-      <div><span class="mono">A</span><p>Seri numaralı ya da lot takipli parça üretenler</p></div>
-      <div><span class="mono">B</span><p>Müşterisi kalite kaydı ve uygunluk belgesi isteyenler</p></div>
-      <div><span class="mono">C</span><p>Kompozit, makine, endüstriyel ekipman ve benzeri atölye üretimi yapanlar</p></div>
-      <div><span class="mono">D</span><p>Üretim kaydını bugün kâğıt formla ya da Excel ile tutanlar</p></div>
+    <p class="label">İletişim</p>
+    <h2>Fabrikanızı görelim.</h2>
+    <p class="lead">Yarım saatlik bir görüşmede hattınızı anlatın, sistemi sizin işinizle gösterelim.</p>
+    <div class="contact-list">
+      <a href="mailto:info@qysystems.com.tr"><span>E-posta</span><span class="v">info@qysystems.com.tr</span></a>
+      <!-- Telefon: numara belli olunca aç -->
+      <!-- <a href="tel:+90..."><span>Telefon</span><span class="v">+90 000 000 00 00</span></a> -->
     </div>
   </div>
 </section>
-
-<section class="band">
-  <div class="wrap">
-    <div>
-      <span class="mono">Veri güvenliği</span>
-      <h2>Verileriniz <em>fabrikanızda</em> kalır.</h2>
-    </div>
-    <p>Sistem fabrikanızdaki bir bilgisayarda çalışabilir. Üretim verileriniz başka bir yere gönderilmez; atölyedeki tablet ve bilgisayarlar web tarayıcısıyla bağlanır. Yedeklemeyi ve güncellemeyi biz kurarız.</p>
-  </div>
-</section>
-
-<section class="contact" id="iletisim">
-  <div class="wrap">
-    <span class="mono">05 · İletişim</span>
-    <h2>Üretiminizi anlatın.</h2>
-    <p>Bugün nasıl kayıt tuttuğunuzu konuşalım. Size uyup uymadığına birlikte bakalım; uyuyorsa bir hatta deneyelim.</p>
-    <a class="mail" href="mailto:info@qysystems.com.tr">info@qysystems.com.tr</a>
-  </div>
-</section>
-
 </main>
 
 <footer>
   <div class="wrap">
-    <div class="titleblock">
-      <div><span class="tv-label">Firma</span><strong>QY Systems</strong></div>
-      <div><span class="tv-label">Doküman</span><strong>Tanıtım</strong></div>
-      <div><span class="tv-label">Rev.</span><strong>A</strong></div>
-      <div><span class="tv-label">Yıl</span><strong>2026</strong></div>
-      <div><span class="tv-label">Dil</span><strong>TR · <a href="en/" hreflang="en" lang="en">EN</a></strong></div>
-    </div>
+    <img src="assets/qy-mark-control.svg" alt="QY Systems">
+    <p>© 2026 QY Systems · qysystems.com.tr</p>
   </div>
 </footer>
-
 </body>
 </html>
